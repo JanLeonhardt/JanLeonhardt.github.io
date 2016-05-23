@@ -18,7 +18,7 @@ function setTable(){
             "info": false,
             columns: [
                 { title: "Name"},
-                { title: "Games"},
+                { title: "G"},
                 { title: "PA"},
                 { title: "AB"},
                 { title: "R"},
