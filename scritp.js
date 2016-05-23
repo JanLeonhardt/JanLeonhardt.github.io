@@ -11,7 +11,7 @@ function parseTable(file,callback) {
 function setTable(){
     parseTable('season/batting.csv',function(n){
         console.log(n);
-        $('#table').DataTable({
+        $('#batting').DataTable({
             data: n,
             "searching": false,
             "paging": false,
@@ -36,6 +36,36 @@ function setTable(){
                 { title: "SO"},
                 { title: "HBP"},
                 { title: "SB"}
+            ]
+        })
+    })
+    parseTable('season/pitching.csv',function(n){
+        console.log(n);
+        $('#pitching').DataTable({
+            data: n,
+            "searching": false,
+            "paging": false,
+            "info": false,
+            columns: [
+                { title: "Name"},
+                { title: "G"},
+                { title: "W"},
+                { title: "L"},
+                { title: "SV"},
+                { title: "IP"},
+                { title: "BF"},
+                { title: "Ball"},
+                { title: "Str"},
+                { title: "PIT"},
+                { title: "R"},
+                { title: "RA"},
+                { title: "ER"},
+                { title: "ERA"},
+                { title: "K"},
+                { title: "Kc"},
+                { title: "Ks"},
+                { title: "H"},
+                { title: "BB"}
             ]
         })
     })
