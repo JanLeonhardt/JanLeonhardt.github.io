@@ -11,6 +11,9 @@ function parseTable(file,callback) {
 function setTable(){
     parseTable('season/batting.csv',function(n){
         $('#table').DataTable({
+            "searching": false,
+            "paging": false,
+            "info": false,
             data: n
         })
     })
