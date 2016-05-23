@@ -9,7 +9,7 @@ function parseTable(file,callback) {
 };
 
 function setTable(){
-    parseTable('/season/batting.csv',function(n){
+    parseTable('season/batting.csv',function(n){
         //$('#table').DataTable({
         //})
         console.log(n)
