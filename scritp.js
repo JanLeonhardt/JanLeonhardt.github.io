@@ -16,11 +16,27 @@ function setTable(){
             "searching": false,
             "paging": false,
             "info": false,
-            "columnDefs":[
-                {"width": "200px", "targets": 0},
-                {"targets":[1,2,3,4,5,6,7,8,9,10,11], "width": "150px"}
+            columns: [
+                { title: "Name"},
+                { title: "Games"},
+                { title: "PA"},
+                { title: "AB"},
+                { title: "R"},
+                { title: "H"},
+                { title: "B"},
+                { title: "1B"},
+                { title: "2B"},
+                { title: "3B"},
+                { title: "HR"},
+                { title: "RBI"},
+                { title: "AVG"},
+                { title: "BB"},
+                { title: "Kc"},
+                { title: "Ks"},
+                { title: "SO"},
+                { title: "HBP"},
+                { title: "SB"}
             ]
-
         })
     })
 }
