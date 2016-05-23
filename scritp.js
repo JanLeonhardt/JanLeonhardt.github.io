@@ -1,7 +1,7 @@
 function parseTable(file,callback) {
     Papa.parse(file, {
         download: true,
-        header: true,
+        header: false,
         complete: function(results) {
             callback(results.data)
         }
